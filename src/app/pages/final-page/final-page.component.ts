@@ -18,16 +18,11 @@ import {
 export class FinalPageComponent {
   public hireResultSignal = inject(CvService).hireResult;
   downloadMessage = signal('');
-  githubLink = '';
 
   check = checkIcon;
   cv = cvIcon;
   download = downloadIcon;
   github = githubIcon;
-
-  get hasValidGithubLink(): boolean {
-    return !!this.githubLink && this.githubLink !== '#';
-  }
 
   showDownloadMessage() {
     this.downloadMessage.set('Descarga iniciada');
