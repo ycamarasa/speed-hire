@@ -1,0 +1,187 @@
+[
+  {
+    "name": "Firulais",
+    "avatar": "firulais.jpeg",
+    "titleJob": "Perrito en prácticas",
+    "experiences": [
+      {
+        "year": "2015",
+        "titleJob": "Guardián del Portal Principal en Casa de los Ramírez",
+        "description": "Vigilancia 24/7 del perímetro, con especialización en detectar carteros, gatos y sombras sospechosas."
+      },
+      {
+        "year": "2017",
+        "titleJob": "Catador Sénior en Comedor Canino Gourmet",
+        "description": "Responsable de pruebas de calidad y sabor en croquetas, huesos y sobras del almuerzo."
+      },
+      {
+        "year": "2018",
+        "titleJob": "Especialista en Seguridad de Sofás",
+        "description": "Encargado de mantener los sofás libres de intrusos, especialmente gatos, aspiradoras y humanos sospechosos de sentarse en ‘mi lugar’."
+      },
+      {
+        "year": "2020",
+        "titleJob": "Analista de Olores en Patio Trasero",
+        "description": "Liderazgo en proyectos de investigación olfativa avanzada, con énfasis en rastros de ardillas y misterios enterrados."
+      },
+      {
+        "year": "2023",
+        "titleJob": "Coordinador de Recreo en Parque Central",
+        "description": "Gestión de grupos de juego y supervisión de humanos distraídos."
+      },
+      {
+        "year": "2024",
+        "titleJob": "Consultor en Relaciones Humanas-Caninas",
+        "description": "Experto en comunicación no verbal con humanos. Implementación de estrategias de mirada intensa para obtener premios sin necesidad de ladrar."
+      }
+    ],
+    "skills": [
+      "Olfato agudo",
+      "Dar la patita",
+      "Buen oído",
+      "Correr tras la pelota"
+    ],
+    "desc": "Aprendiz de buen chico, con ganas de aprender y repartir amor sin condiciones.",
+    "address": "Calle del Hueso Alegre, Nº 7 Urbanización Buen Chico, 28022 Madrid, España",
+    "telf": "(+34) 601 424 WOOF",
+    "email": "firulais@guau.es",
+    "facebook": "https://www.facebook.com/somosfirulais/?locale=es_LA",
+    "instagram": "https://www.instagram.com/soyfirulais/?hl=es",
+    "linkedin": "https://www.linkedin.com/in/firulais-undostres-9636a61ba/"
+  },
+  {
+    "name": "He-Man",
+    "avatar": "heman.avif",
+    "titleJob": "Príncipe de Eternia | Campeón de Grayskull",
+    "experiences": [
+      {
+        "year": "1983",
+        "titleJob": "Guerrero del Poder en Eternia",
+        "description": "Encargado de proteger el Reino de Eternia de las fuerzas del mal lideradas por Skeletor. Demostró habilidades excepcionales en combate cuerpo a cuerpo y uso del poder ancestral de Grayskull."
+      },
+      {
+        "year": "1990",
+        "titleJob": "Embajador de la Paz Intergaláctica",
+        "description": "Lideró negociaciones diplomáticas con aliados cósmicos. Implementó programas de entrenamiento físico y espiritual para los Defensores de Eternia."
+      },
+      {
+        "year": "2020",
+        "titleJob": "Motivador Personal y Entrenador Héroico Freelance",
+        "description": "Asesoramiento en desarrollo personal, empoderamiento y uso responsable del poder interior. Fundador del programa '¡Tú también tienes el poder!™'"
+      }
+    ],
+    "skills": [
+      "Fuerza sobrehumana",
+      "Espada del poder",
+      "Montar a Battle Cat",
+      "Gritar ¡Yo tengo el poder!"
+    ],
+    "desc": "Alter ego del príncipe Adam, He-Man es el guerrero más poderoso del universo. Protector del reino de Eternia y guardián del Castillo de Grayskull, lucha incansablemente contra las fuerzas del mal lideradas por Skeletor.",
+    "address": "Castillo Grayskull, Valle de la Eternia, 00001, Reino de Eternia",
+    "telf": "(+34) 600 123 POWER",
+    "email": "he-man@grayskull.es",
+    "facebook": "https://www.facebook.com/groups/988976824933267/",
+    "instagram": "https://www.instagram.com/heman/?hl=es",
+    "linkedin": "https://www.linkedin.com/posts/comunidaduxui_humor-viernes-meme-activity-7230207934813618176-xNwX/?originalSubdomain=es"
+  },
+  {
+    "name": "Tió de Nadal",
+    "avatar": "tio-de-nadal.jpg",
+    "titleJob": "Repartidor de Regalos Catalán | Maestro de la Felicidad Navideña",
+    "experiences": [
+      {
+        "year": "1900",
+        "titleJob": "Guardabosques de Hogares Catalanes",
+        "description": "Se asegura de estar presente en todos los hogares para traer alegría durante las fiestas."
+      },
+      {
+        "year": "1950",
+        "titleJob": "Repartidor de Regalos",
+        "description": "Tras recibir golpecitos de los niños, entrega dulces, juguetes y sorpresas escondidas bajo la manta."
+      },
+      {
+        "year": "2023",
+        "titleJob": "Maestro de Tradición",
+        "description": "Mantiene viva la tradición catalana enseñando a nuevas generaciones cómo cuidar y golpear al Tió para recibir sus regalos."
+      }
+    ],
+    "skills": [
+      "Repartir regalos",
+      "Comer toda la comida del plato",
+      "Guardar secretos navideños",
+      "Recibir golpes con estoicidad"
+    ],
+    "desc": "El Tió de Nadal es un tronco mágico que, con un poco de cariño y golpecitos, trae alegría y regalos a todos los hogares catalanes en Navidad.",
+    "address": "Catalunya, España",
+    "telf": "(+34) 600 123 CAGU",
+    "email": "tio@nadal.cat",
+    "facebook": "https://www.facebook.com/TiodeNadalCatalunya",
+    "instagram": "https://www.instagram.com/tiodenadal/",
+    "linkedin": "https://www.linkedin.com/in/tiode-nadal/"
+  },
+  {
+    "name": "Yolanda Camarasa",
+    "avatar": "yo.jpg",
+    "titleJob": "Desarrolladora Web Frontend",
+    "experiences": [
+      {
+        "year": "2005",
+        "yearEnd": "2006",
+        "titleJob": "Maquetadora | Ayudante de redacción",
+        "description": "La Mañana"
+      },
+      {
+        "year": "2007",
+        "titleJob": "Diseñadora Gráfica | Dependienta",
+        "description": "Foto Art Bonet"
+      },
+      {
+        "year": "2008",
+        "titleJob": "Secretaria",
+        "description": "Trifori Arquitectes"
+      },
+      {
+        "year": "2008",
+        "yearEnd": "2010",
+        "titleJob": "Técnica en formación| Diseñadora Gráfica",
+        "description": "Academia Técnica Les Heures"
+      },
+      {
+        "year": "2019",
+        "yearEnd": "2024",
+        "titleJob": "SAP Commerce Cloud Frontend Developer",
+        "description": "Seidor"
+      }
+    ],
+    "skills": [
+      "SAP Commerce cloud",
+      "SAP Emarsys",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3/LESS/SASS",
+      "Angular",
+      "Spartacus",
+      "Typescript",
+      "SmartEdit",
+      "Git",
+      "Metodología BEM",
+      "Bootstrap",
+      "PrimeNG",
+      "Tailwind/DaisyUI",
+      "Angular Material",
+      "ESLint",
+      "Figma",
+      "Photoshop",
+      "Illustrator",
+      "Linux Ubuntu"
+    ],
+    "desc": "Spoiler, soy el dev que buscas.",
+    "isReal": true,
+    "address": "Balaguer (LLEIDA)",
+    "telf": "(+34) 669 229 884",
+    "email": "ycamarasa@gmail.com",
+    "facebook": "",
+    "instagram": "https://www.instagram.com/y.camasasa/?hl=es",
+    "linkedin": "https://www.linkedin.com/in/y-c-c/"
+  }
+]

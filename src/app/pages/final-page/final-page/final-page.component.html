@@ -1,0 +1,71 @@
+@if(hireResultSignal()) {
+<app-confetti />
+
+<div class="finalpage-content">
+  <div role="alert" class="flex flex-col items-center justify-center h-screen">
+    <h1 class="text-9xl pb-5 animate-bounce-smooth text-green-800">
+      ¡Enhorabuena!
+    </h1>
+    <p class="pb-5 text-lg text-gray-600">
+      Has elegido al mejor candidato. Puedes descargarte el CV.
+    </p>
+
+    <div class="button-group flex gap-3">
+      <!-- GITHUB -->
+      @if(hasValidGithubLink){
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn bg-black text-white rounded-3xl hover:bg-gray-800 transition-colors"
+      >
+        <app-icon [svg]="github" class="text-white"></app-icon>
+        Ver código fuente GitHub
+      </a>
+
+      }
+
+      <!-- DOWNLOAD -->
+      <a
+        href="CV-Dev-YCC.pdf"
+        download
+        aria-label="Descargar CV de Yolanda Camarasa"
+        (click)="showDownloadMessage()"
+        class="btn btn-accent rounded-3xl"
+      >
+        <app-icon [svg]="download"></app-icon>
+        Descargar CV
+      </a>
+
+      <!-- REVISAR CV -->
+      <a [routerLink]="['/']" class="btn btn-secondary rounded-3xl">
+        <app-icon [svg]="cv"></app-icon>
+        Volver a revisar CVs
+      </a>
+    </div>
+    @if (downloadMessage()) {
+    <div
+      role="alert"
+      class="alert alert-success fixed top-0 left-0 w-full z-50 text-center py-3 shadow-md bg-green-500 text-white flex items-center justify-center gap-2 transform transition-all duration-500 ease-in-out"
+    >
+      <app-icon [svg]="check"></app-icon>
+      <span> {{ downloadMessage() }}</span>
+    </div>
+    }
+  </div>
+</div>
+
+} @else {
+<div
+  role="alert"
+  class="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-red-100 to-white"
+>
+  <h1 class="text-9xl pb-5">¡Ups!</h1>
+  <p class="pb-5">Por favor, inténtalo de nuevo.</p>
+
+  <a [routerLink]="['/']" class="btn btn-secondary rounded-3xl">
+    <app-icon [svg]="cv"></app-icon>
+    Volver a revisar CVs
+  </a>
+</div>
+}

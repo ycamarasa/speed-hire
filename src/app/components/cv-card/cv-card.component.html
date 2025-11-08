@@ -1,0 +1,210 @@
+<div class="card-container">
+  <div class="card">
+    <div class="card-bg"></div>
+    <div class="tabs tabs-border" role="tablist">
+      <!-- TAB 1 -->
+      <input
+        type="radio"
+        name="my_tabs_4"
+        class="tab"
+        role="tab"
+        aria-controls="panel-1"
+        aria-label="SOBRE MI"
+        [checked]="activeTab() === 1"
+        [attr.aria-selected]="activeTab() === 1"
+        (change)="setActiveTab(1)"
+      />
+      <div
+        class="tab-content bg-base-100 border-base-300 p-6"
+        role="tabpanel"
+        aria-labelledby="tab-1"
+      >
+        <div
+          class="card-avatar mask mask-squircle flex justify-center items-center"
+        >
+          <img
+            class="w-[150px] h-[150px] aspect-square object-cover"
+            src="{{ cv()?.avatar }}"
+            alt="avatar"
+          />
+        </div>
+        <h1 class="card-fullname font-bold font-jost text-4xl text-center pt-5">
+          {{ cv()?.name }}
+        </h1>
+
+        <h2 class="card-job-title font-jost text-center">
+          {{ cv()?.titleJob }}
+        </h2>
+        <div class="card-section">
+          <div class="card-content my-10">
+            <div class="card-subtitle text-left">SOBRE MI</div>
+
+            <p class="card-desc text-left">
+              {{ cv()?.desc }}
+            </p>
+          </div>
+          <div class="card-social">
+            @if (cv()?.facebook) {
+            <a
+              href="{{ cv()?.facebook }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <app-icon [svg]="facebook"></app-icon>
+            </a>
+            }
+            @if (cv()?.instagram) {
+            <a
+              href="{{ cv()?.instagram }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <app-icon [svg]="instagram"></app-icon>
+            </a>
+            }
+            @if (cv()?.linkedin) {
+            <a
+              href="{{ cv()?.linkedin }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <app-icon [svg]="linkedin"></app-icon>
+            </a>
+            }
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2 -->
+      <input
+        type="radio"
+        name="my_tabs_4"
+        class="tab"
+        role="tab"
+        aria-controls="panel-2"
+        aria-label="EXPERIENCIA"
+        [checked]="activeTab() === 2"
+        [attr.aria-selected]="activeTab() === 2"
+        (change)="setActiveTab(2)"
+      />
+
+      <div
+        class="tab-content bg-base-100 border-base-300 p-6"
+        role="tabpanel"
+        aria-labelledby="tab-2"
+      >
+        <div class="card-subtitle">EXPERIENCIA</div>
+
+        <div class="card-timeline">
+          @for (experience of reversedExperiences; track $index) {
+          <div
+            class="card-item"
+            [attr.data-year]="experience.year"
+            [attr.data-year-end]="experience.yearEnd"
+          >
+            <div class="card-timeline-year">
+              <div>{{ experience.year }}</div>
+              <div>{{ experience.yearEnd }}</div>
+            </div>
+
+            <div class="card-item-title">
+              {{ experience.titleJob }}
+            </div>
+            <div class="card-item-desc">
+              {{ experience.description }}
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+
+      <!-- TAB 3 -->
+      <input
+        type="radio"
+        name="my_tabs_4"
+        class="tab"
+        role="tab"
+        aria-controls="panel-3"
+        aria-label="SKILLS"
+        [checked]="activeTab() === 3"
+        [attr.aria-selected]="activeTab() === 3"
+        (change)="setActiveTab(3)"
+      />
+      <div
+        class="tab-content bg-base-100 border-base-300 p-6"
+        role="tabpanel"
+        aria-labelledby="tab-3"
+      >
+        <div class="card-subtitle">SKILLS</div>
+
+        <div
+          class="card-skills"
+          [ngClass]="{ 'columns-2 gap-4': hasManySkills }"
+        >
+          @for (skill of cv()?.skills; track $index) {
+          <p>{{ skill }}</p>
+          }
+        </div>
+      </div>
+
+      <!-- TAB 4 -->
+      <input
+        type="radio"
+        name="my_tabs_4"
+        class="tab"
+        role="tab"
+        aria-controls="panel-4"
+        aria-label="CONTACTO"
+        [checked]="activeTab() === 4"
+        [attr.aria-selected]="activeTab() === 4"
+        (change)="setActiveTab(4)"
+      />
+      <div
+        class="tab-content bg-base-100 border-base-300 p-6"
+        role="tabpanel"
+        aria-labelledby="tab-1"
+      >
+        <div class="card-subtitle">CONTACTO</div>
+        <div class="card-contact-wrapper">
+          <div class="card-contact">
+            <app-icon [svg]="location"></app-icon>
+            {{ cv()?.address }}
+          </div>
+          <div class="card-contact">
+            <app-icon [svg]="telf"></app-icon>
+            {{ cv()?.telf }}
+          </div>
+          <div class="card-contact">
+            <app-icon [svg]="email"></app-icon>
+            {{ cv()?.email }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD FOOTER -->
+    <div class="card-footer flex gap-3 justify-center py-4">
+      <!-- CV IS REAL -->
+      @if (cv()?.isReal) {
+      <label type="checkbox" class="swap swap-flip">
+        <input type="checkbox" (change)="onConfirmChange($event)" />
+
+        <div class="swap-off btn btn-primary rounded-3xl">Rechazar</div>
+        <div class="swap-on btn btn-secondary rounded-3xl">¡Contratar!</div>
+      </label>
+      <a class="btn btn-secondary rounded-3xl" (click)="selectCV(true)">
+        ¡Contratar!
+      </a>
+      }
+      <!-- CV NOT REAL -->
+      @else {
+      <a class="btn btn-primary rounded-3xl" (click)="selectCV(false)">
+        Rechazar
+      </a>
+      <a class="btn btn-secondary rounded-3xl" (click)="selectCV(true)">
+        ¡Contratar!
+      </a>
+      }
+    </div>
+  </div>
+</div>

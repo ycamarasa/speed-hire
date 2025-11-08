@@ -1,0 +1,8 @@
+<div class="gamepage-container">
+  <div class="bg-blur"></div>
+  <countdown-component
+    [restartCountdown]="restartCountdownTrigger()"
+    (timeExpired)="handleDecision(false)"
+  />
+  <cv-card-component [cv]="currentCV" (selected)="handleDecision($event)" />
+</div>
