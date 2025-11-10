@@ -4,7 +4,6 @@
 
 
 
-
 ## 🎮 ¿Cómo funciona?
 
 1. Al comenzar el juego, se muestran varios **CVs generados dinámicamente**.
@@ -95,7 +94,8 @@ http://localhost:4200
 
 ## 👩‍💻 Autor
 
-Desarrollado por ycamarasa
+Desarrollado por **ycamarasa**
+
 💼 Frontend Developer | UX/UI Enthusiast
 
 📎 [LinkedIn](https://www.linkedin.com/in/y-c-c/)
