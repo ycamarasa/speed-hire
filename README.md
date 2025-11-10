@@ -17,7 +17,7 @@
 
 ## 🧠 Tecnologías utilizadas
 
-- **Angular 17** con el nuevo sistema de **Signals** (`signal`, `computed`, `effect`, `input`, `output`).
+- **Angular 19** con el nuevo sistema de **Signals** (`signal`, `computed`, `effect`, `input`, `output`).
 - **TailwindCSS** para el estilo base.
 - **DaisyUI** como librería de componentes y utilidades de UI.
 - **TypeScript** para la lógica y tipado.
