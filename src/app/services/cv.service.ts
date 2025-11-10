@@ -8,10 +8,17 @@ export class CvService {
   private http = inject(HttpClient);
   public hireResult = signal<boolean | null>(null);
 
+  githubLink = signal('');
+
   getCVs(): Observable<CvInterface[]> {
     return this.http.get<CvInterface[]>('/assets/data/cv.data.json').pipe(
       map((cvs: CvInterface[]) => {
         const realCV = cvs.find((cv) => cv.isReal === true);
+
+        if (realCV) {
+          this.githubLink.set(realCV.github || '');
+        }
+
         const fakeCVs = cvs.filter((cv) => cv.isReal !== true);
         const shuffledFakes = this.shuffle([...fakeCVs]);
 

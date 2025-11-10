@@ -12,6 +12,7 @@ export interface CvInterface {
   facebook: string;
   instagram: string;
   linkedin: string;
+  github?: string;
 }
 
 export interface Experience {

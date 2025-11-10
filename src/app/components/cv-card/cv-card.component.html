@@ -1,4 +1,4 @@
-<div class="card-container">
+<div class="card__container">
   <div class="card">
     <div class="card-bg"></div>
     <div class="tabs tabs-border" role="tablist">
@@ -37,13 +37,13 @@
         </h2>
         <div class="card-section">
           <div class="card-content my-10">
-            <div class="card-subtitle text-left">SOBRE MI</div>
+            <div class="card__subtitle text-left">SOBRE MI</div>
 
-            <p class="card-desc text-left">
+            <p class="card__desc text-left">
               {{ cv()?.desc }}
             </p>
           </div>
-          <div class="card-social">
+          <div class="card__social">
             @if (cv()?.facebook) {
             <a
               href="{{ cv()?.facebook }}"
@@ -93,24 +93,24 @@
         role="tabpanel"
         aria-labelledby="tab-2"
       >
-        <div class="card-subtitle">EXPERIENCIA</div>
+        <div class="card__subtitle">EXPERIENCIA</div>
 
-        <div class="card-timeline">
+        <div class="card__timeline">
           @for (experience of reversedExperiences; track $index) {
           <div
-            class="card-item"
+            class="card__item"
             [attr.data-year]="experience.year"
             [attr.data-year-end]="experience.yearEnd"
           >
-            <div class="card-timeline-year">
+            <div class="card__timeline-year">
               <div>{{ experience.year }}</div>
               <div>{{ experience.yearEnd }}</div>
             </div>
 
-            <div class="card-item-title">
+            <div class="card__item-title">
               {{ experience.titleJob }}
             </div>
-            <div class="card-item-desc">
+            <div class="card__item-desc">
               {{ experience.description }}
             </div>
           </div>
@@ -135,10 +135,10 @@
         role="tabpanel"
         aria-labelledby="tab-3"
       >
-        <div class="card-subtitle">SKILLS</div>
+        <div class="card__subtitle">SKILLS</div>
 
         <div
-          class="card-skills"
+          class="card__skills"
           [ngClass]="{ 'columns-2 gap-4': hasManySkills }"
         >
           @for (skill of cv()?.skills; track $index) {
@@ -164,17 +164,17 @@
         role="tabpanel"
         aria-labelledby="tab-1"
       >
-        <div class="card-subtitle">CONTACTO</div>
-        <div class="card-contact-wrapper">
-          <div class="card-contact">
+        <div class="card__subtitle">CONTACTO</div>
+        <div class="card__contact-wrapper">
+          <div class="card__contact">
             <app-icon [svg]="location"></app-icon>
             {{ cv()?.address }}
           </div>
-          <div class="card-contact">
+          <div class="card__contact">
             <app-icon [svg]="telf"></app-icon>
             {{ cv()?.telf }}
           </div>
-          <div class="card-contact">
+          <div class="card__contact">
             <app-icon [svg]="email"></app-icon>
             {{ cv()?.email }}
           </div>

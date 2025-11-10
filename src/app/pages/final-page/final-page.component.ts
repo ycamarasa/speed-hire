@@ -17,6 +17,7 @@ import {
 })
 export class FinalPageComponent {
   public hireResultSignal = inject(CvService).hireResult;
+  public githubLinktSignal = inject(CvService).githubLink;
   downloadMessage = signal('');
 
   check = checkIcon;

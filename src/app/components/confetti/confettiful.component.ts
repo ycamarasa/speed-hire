@@ -17,7 +17,7 @@ export class Confettiful {
       this.el.style.position = 'relative';
     }
 
-    containerEl.classList.add('confetti-container');
+    containerEl.classList.add('confetti__container');
     this.el.appendChild(containerEl);
     this.containerEl = containerEl;
   }
@@ -32,7 +32,7 @@ export class Confettiful {
       const confettiLeft = `${Math.floor(Math.random() * this.el.offsetWidth)}px`;
       const confettiAnimation = this.confettiAnimations[Math.floor(Math.random() * this.confettiAnimations.length)];
 
-      confettiEl.classList.add('confetti', `confetti--animation-${confettiAnimation}`);
+      confettiEl.classList.add('confetti__content', `confetti__piece--${confettiAnimation}`);
       confettiEl.style.left = confettiLeft;
       confettiEl.style.width = confettiSize;
       confettiEl.style.height = confettiSize;

@@ -63,18 +63,20 @@
   --width-social: 2rem;
 }
 
-.homepage-content {
+.homepage__content {
   background: var(--color-red);
 }
 
-/* START GAME PAGE */
-.gamepage-container {
+/* ==========================
+      START GAME BLOCK
+========================== */
+.gamepage__container {
   min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
-.bg-blur {
+.gamepage__background--blur {
   position: fixed;
   inset: 0;
   background-image: url(/card-bg.avif);
@@ -89,9 +91,13 @@
   position: relative;
   z-index: 1;
 }
-/* END GAME PAGE */
+/* ==========================
+      END GAME BLOCK
+========================== */
 
-/* START CARD */
+/* ==========================
+      START CARD BLOCK
+========================== */
 :is(
     .tabs-border
       > .tab:is(
@@ -112,7 +118,7 @@
   }
 }
 
-.card-container {
+.card__container {
   padding: var(--gap-lg);
   font-family: "Jost", sans-serif;
 }
@@ -132,13 +138,13 @@
   z-index: 1;
 }
 
-.card-subtitle {
+.card__subtitle {
   margin-bottom: var(--gap-xs);
   font-size: var(--font-base);
   font-weight: 700;
 }
 
-.card-desc {
+.card__desc {
   margin: 0;
   color: var(--color-text);
   font-size: var(--font-md);
@@ -147,7 +153,7 @@
   line-height: 1.6;
 }
 
-.card-social {
+.card__social {
   display: flex;
   align-items: center;
 
@@ -191,18 +197,18 @@
   }
 }
 
-.card-timeline {
+.card__timeline {
   position: relative;
   margin-top: var(--gap-2xl);
   max-height: 250px;
   overflow: auto;
 
-  &:has(.card-item:nth-child(6)) {
+  &:has(.card__item:nth-child(6)) {
     max-height: 400px;
   }
 }
 
-.card-timeline-year {
+.card__timeline-year {
   position: absolute;
   left: 0;
   top: -2px;
@@ -210,20 +216,20 @@
   color: var(--color-text-light);
 }
 
-.card-item-title,
-.card-item-desc {
+.card__item-title,
+.card__item-desc {
   border-left: 2px solid var(--color-border-blue);
   height: 100%;
   padding-left: 20px;
 }
 
-.card-item-title {
+.card__item-title {
   padding-bottom: 5px;
   font-weight: 500;
   font-size: var(--font-md);
 }
 
-.card-item-desc {
+.card__item-desc {
   padding-bottom: var(--gap-2xl);
   font-size: var(--font-md);
   font-family: "DM Sans", sans-serif;
@@ -231,7 +237,7 @@
   line-height: 1.5;
 }
 
-.card-item {
+.card__item {
   position: relative;
   padding-left: 45px;
   padding-right: var(--gap-lg);
@@ -256,7 +262,7 @@
   }
 
   &:last-child {
-    .card-item-desc {
+    .card__item-desc {
       border: 0;
 
       &::before {
@@ -272,16 +278,16 @@
   }
 }
 
-.card-skills {
+.card__skills {
   color: var(--color-text);
   font-size: var(--font-md);
 }
 
-.card-contact-wrapper {
+.card__contact-wrapper {
   margin-top: var(--gap-lg);
 }
 
-.card-contact {
+.card__contact {
   display: flex;
   align-items: center;
   font-size: var(--font-md);
@@ -304,9 +310,13 @@
     transition: 0.3s;
   }
 }
-/* END CARD */
+/* ==========================
+      END CARD BLOCK
+========================== */
 
-/* START CONFETTI */
+/* ==========================
+      START CONFETTI BLOCK
+========================== */
 @keyframes confetti-slow {
   0% {
     transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
@@ -334,7 +344,7 @@
   }
 }
 
-.confetti-container {
+.confetti__container {
   position: absolute;
   top: 0;
   right: 0;
@@ -344,40 +354,42 @@
   perspective: 44rem;
 }
 
-.confetti {
+.confetti__content {
   position: absolute;
   top: -0.625rem;
   border-radius: 0%;
   z-index: 1;
 }
 
-.confetti--animation-slow {
+.confetti__piece--slow {
   animation: confetti-slow 4.25s linear 1 forwards;
 }
 
-.confetti--animation-medium {
+.confetti__piece--medium {
   animation: confetti-medium 3.75s linear 1 forwards;
 }
 
-.confetti--animation-fast {
+.confetti__piece--fast {
   animation: confetti-fast 3.25s linear 1 forwards;
 }
 
-.confetti-final {
+.confetti__container {
   position: absolute;
   width: 100%;
   height: 100vh;
   z-index: -1;
 }
-/* END CONFETTI */
+/* ==========================
+      END CONFETTI BLOCK
+========================== */
 
-/**********************/
-/***** RESPONSIVE *****/
-/**********************/
+/* ==========================
+        RESPONSIVE
+========================== */
 
 /* START TABLET */
 @media (max-width: 768px) {
-  .homepage-content {
+  .homepage__content {
     h1 {
       font-size: var(--font-3xl);
     }
@@ -408,7 +420,7 @@
 
 /* START MOBILE */
 @media (max-width: 480px) {
-  .homepage-content {
+  .homepage__content {
     h1 {
       font-size: var(--font-2xl);
     }
