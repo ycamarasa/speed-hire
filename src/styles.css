@@ -87,7 +87,7 @@
   transform: scale(1.1);
 }
 
-.countdown-container {
+.countdown__container {
   position: relative;
   z-index: 1;
 }
