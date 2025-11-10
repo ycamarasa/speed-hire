@@ -54,11 +54,17 @@ src/
 
 ### 🏠 **Home Page**
 Pantalla de bienvenida con introducción al juego y botón de inicio.
+ <br/>
+ 
+![Home](src/assets/screenshots/homepage.png)
 
 ### ⏱️ **Game Page**
 - Muestra los **CVs candidatos**.
 - Incluye el **componente `countdown`** que controla el tiempo.
 - El jugador elige un candidato antes de que llegue a 0.
+ <br/>
+ 
+![Game](src/assets/screenshots/gamepage.png)
 
 ### 🎉 **Final Page**
 Dependiendo del resultado:
@@ -67,6 +73,9 @@ Dependiendo del resultado:
   - Ver el código fuente en GitHub.
   - Volver a revisar otros CVs.
 - ❌ Si falla: mensaje de error y opción para volver al inicio.
+  <br/>
+
+ ![Final](src/assets/screenshots/finalPage.png)
 
 
 
